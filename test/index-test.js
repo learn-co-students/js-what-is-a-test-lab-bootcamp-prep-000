@@ -10,12 +10,12 @@ describe('what-is-a-test', () => {
 
   describe('Height', () => {
     it('is greater than 40', () => {
-      expect(index.height).toBeLessThan(40)
+      expect(index.height).toBeGreaterThan(40)
     })
   })
 
   describe('Message', () => {
-    it('gives the name and height', () => {
+    it('is 74 inches tall', () => {
       expect(index.message).toInclude(index.name)
       expect(index.message).toInclude(index.height)
     })
