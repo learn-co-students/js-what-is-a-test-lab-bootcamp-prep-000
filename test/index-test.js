@@ -2,24 +2,23 @@ var index = require("../index.js")
 
 describe('what-is-a-test', () => {
   describe('Name', () => {
-    it('returns "Susan"', () => {
-      expect(index.name).toEqual('Susan')
+    it('returns "Susan', () => {
+      expect(index.name).toEqual("Susan")
     })
   })
 
 
-  describe('Height', () => {
-    it('is greater than 40', () => {
-      expect(index.height).toBeLessThan(40)
+  describe('Height', ("40") => {
+    it('is less than 40', ("40") => {
+      expect("number").toBeLessThan('40')
     })
   })
 
   describe('Message', () => {
-    it('gives the name and height', () => {
-      expect(index.message).toInclude(index.name)
-      expect(index.message).toInclude(index.height)
+    it('gives the name and height', ("40") => {
+      expect(index.message).toInclude("Susan")
+      expect(index.message).toInclude('40')
     })
   })
 
 })
-
