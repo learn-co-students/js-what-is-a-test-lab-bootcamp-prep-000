@@ -1,6 +1,6 @@
 # Running Tests
 
-You understand how to read tests, now it's time to run the tests. We've made it fairly easy. In the same terminal that you used to write `nodejs tests.js` or `nodejs index.js` now you just need to write `learn`. That's it! No matter what the lab, our Learn command will figure out where you are and run the appropriate tests and give you results.
+You understand how to read tests, now it's time to run the tests. We've made it fairly easy. In the same terminal that you used to write `nodejs tests.js` or `nodejs index.js` now, you just need to write `learn`. That's it! No matter what the lab, our Learn command will figure out where you are and run the appropriate tests and give you results.
 
 Speaking of results... let's talk about how to read the results that tests give you.
 
@@ -34,7 +34,7 @@ If we run `learn` in our terminal right now, you'll get a bunch of failed tests.
       at Expectation.toEqual (node_modules/expect/lib/Expectation.js:81:30)
       at Context.it (test/index-test.js:6:26)
 
-  2) what-is-a-test Height is greater than 40:
+  2) what-is-a-test Height is less than 40:
      Error: Expected 74 to be less than 40
       at assert (node_modules/expect/lib/assert.js:29:9)
       at Expectation.toBeLessThan (node_modules/expect/lib/Expectation.js:156:28)
@@ -58,7 +58,7 @@ Let's break this down a bit. If you look at the line under the cat (I love progr
 3 failing
 ```
 
-That should be fairly obvious. You passed 0 tests, and failed 3 tests. Not a great start...but plenty of room for improvement. Let's see how we failed the three tests.
+That should be fairly obvious. You passed 0 tests and failed 3 tests. Not a great start, but plenty of room for improvement. Let's see how we failed the three tests.
 
 ```
 1) what-is-a-test Name returns "Susan":
@@ -73,7 +73,7 @@ That should be fairly obvious. You passed 0 tests, and failed 3 tests. Not a gre
   at Expectation.toEqual (node_modules/expect/lib/Expectation.js:81:30)
   at Context.it (test/index-test.js:6:26)
 
-2) what-is-a-test Height is greater than 40:
+2) what-is-a-test Height is less than 40:
  Error: Expected 74 to be less than 40
   at assert (node_modules/expect/lib/assert.js:29:9)
   at Expectation.toBeLessThan (node_modules/expect/lib/Expectation.js:156:28)
@@ -102,7 +102,7 @@ at Expectation.toEqual (node_modules/expect/lib/Expectation.js:81:30)
 at Context.it (test/index-test.js:6:26)
 ```
 
-The tests expects name to return `"Susan"`. But if you look at the `Error: Expected 'Joe' to equal 'Susan'` line you can see that it received `Joe` and expected `Susan`. That makes sense! In our `index.js` file we have the `name` variable equal `"Joe"`. If you change that line to be equal to `"Susan"` and then run the tests again by typing `learn` in the command line you should see progress!
+The tests expects `name` to return `"Susan"`. But if you look at the `Error: Expected 'Joe' to equal 'Susan'` line you can see that it received `Joe` and expected `Susan`. That makes sense! In our `index.js` file we have the `name` variable equal `"Joe"`. If you change that line to be equal to `"Susan"` and then run the tests again by typing `learn` in the command line you should see progress!
 
 ```
 1   -_-__,------,
@@ -113,7 +113,7 @@ The tests expects name to return `"Susan"`. But if you look at the `Error: Expec
   1 passing (953ms)
   2 failing
 
-  1) what-is-a-test Height is greater than 40:
+  1) what-is-a-test Height is less than 40:
      Error: Expected 74 to be less than 40
       at assert (node_modules/expect/lib/assert.js:29:9)
       at Expectation.toBeLessThan (node_modules/expect/lib/Expectation.js:156:28)
@@ -179,8 +179,8 @@ SyntaxError: Unexpected identifier
     at bootstrap_node.js:508:3
 ```
 
-Woah! So many words that make no sense. Don't worry though. The most important line is the `SyntaxError: Unexpected identifier` line. What that means is you have some sort of typo or syntax mistake, It could be a HUGE variety of things but usually JS will try and give you a hint. This time it's pointing to the `vr name = "Susan"` line of code. Take a look and read _very carefully_. I misspelled `var`. Whoops! If you fix that everything will work. 
+Woah! So many words that make no sense. Don't worry though. The most important line is the `SyntaxError: Unexpected identifier` line. What that means is you have some sort of typo or syntax mistake, It could be a HUGE variety of things but usually, JS will try and give you a hint. This time it's pointing to the `vr name = "Susan"` line of code. Take a look and read _very carefully_. I misspelled `var`. Whoops! If you fix that everything will work. 
 
-One note on this type of error is that it is sort of a catch-all. Tons and tons of problems end in that sort of error message. Whenever you see it, be sure to read over you code with a fine toothed comb...and you'll find the problem!
+One note on this type of error is that it is sort of a catch-all. Tons and tons of problems end in that sort of error message. Whenever you see it, be sure to read over your code with a fine toothed comb...and you'll find the problem!
 
 <p class='util--hide'>View <a href='https://learn.co/lessons/js-what-is-a-test-lab'>What Is A Test Lab</a> on Learn.co and start learning to code for free.</p>
