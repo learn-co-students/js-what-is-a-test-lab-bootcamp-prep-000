@@ -1,6 +1,10 @@
 // write your code below!
-vr name = "Susan"
-var height = 74
-var message = ` is ${height} inches tall`
 
-module.exports = {name, height, message}
+var name = "Lucy"
+var height = "74"
+
+console.log("Name:")
+console.log(name)
+
+console.log("Height:")
+console.log(height + 1)
