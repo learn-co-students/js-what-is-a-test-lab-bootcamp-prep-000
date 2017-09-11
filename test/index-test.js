@@ -19,7 +19,3 @@ describe('what-is-a-test', () => {
       expect(index.message).toInclude(index.name)
       expect(index.message).toInclude(index.height)
     })
-  })
-
-})
-
