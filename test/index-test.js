@@ -1,4 +1,6 @@
 var index = require("../index.js")
+var name = "Susan"
+var height = 39
 
 describe('what-is-a-test', () => {
   describe('Name', () => {
@@ -22,4 +24,3 @@ describe('what-is-a-test', () => {
   })
 
 })
-
