@@ -21,4 +21,8 @@ describe('what-is-a-test', () => {
   })
 
 })
+<<<<<<< HEAD
 Name=== {Joe} is (74)inches tall
+=======
+Name=== {Joe} is (74)inches tall
+>>>>>>> 8d60e07e26861d71efc114724266c9e804f41c56
