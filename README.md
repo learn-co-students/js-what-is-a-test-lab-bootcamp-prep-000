@@ -184,3 +184,11 @@ Woah! So many words that make no sense. Don't worry though. The most important l
 One note on this type of error is that it is sort of a catch-all. Tons and tons of problems end in that sort of error message. Whenever you see it, be sure to read over your code with a fine toothed comb...and you'll find the problem!
 
 <p class='util--hide'>View <a href='https://learn.co/lessons/js-what-is-a-test-lab'>What Is A Test Lab</a> on Learn.co and start learning to code for free.</p>
+
+
+
+
+
+
+// ♥
+
