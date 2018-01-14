@@ -1,6 +1,9 @@
 // write your code below!
-var name = "Joe"
-var height = 74
-var message = ` is ${height} inches tall`
-
+var name = "Susan"
+var height = 39
+var message = `${name} is ${height} inches tall`
+if (height < 40){name="Susan";
+}
+else {name="Joe"
+}
 module.exports = {name, height, message}
