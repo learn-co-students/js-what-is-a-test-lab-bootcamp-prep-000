@@ -24,7 +24,7 @@ If we run `learn` in our terminal right now, you'll get a bunch of failed tests.
 
   1) what-is-a-test Name returns "Susan":
 
-      Error: Expected 'Joe' to equal 'Susan'
+      Error: Expected 'Susan' to equal 'Susan'
       + expected - actual
 
       -Joe
@@ -63,7 +63,7 @@ That should be fairly obvious. You passed 0 tests and failed 3 tests. Not a grea
 ```
 1) what-is-a-test Name returns "Susan":
 
-  Error: Expected 'Joe' to equal 'Susan'
+  Error: Expected 'Susan' to equal 'Susan'
   + expected - actual
 
   -Joe
@@ -137,13 +137,13 @@ While you are solving the other tests you may come across a few errors. Let's go
 Error: Expected undefined to equal 'Susan'
 ```
 
-That one says that it expected `undefined` to equal Susan. That makes no sense! You didn't set the `name` variable to `undefined`. Why does it think that `name` is equal to `undefined`? What that actually means is that the test couldn't find the variable `name`. This can happen if you by accident rename the variable. Taking a look at `index.js` I made this mistake: `var nae = "Susan"`. Whoops! If I change that back to `name` everything works. :)
+That one says that it expected `undefined` to equal Susan. That makes no sense! You didn't set the `name` variable to `undefined`. Why does it think that `name` is equal to `undefined`? What that actually means is that the test couldn't find the variable `name`. This can happen if you by accident rename the variable. Taking a look at `index.js` I made this mistake: `var Name = "Susan"`. Whoops! If I change that back to `name` everything works. :)
 
 #### Unexpected identifier
 
 ```
 /Users/joe/Documents/Documents/flatiron/js-what-is-a-test-lab/index.js:2
-vr name = "Susan"
+var name = "Susan"
    ^^^^
 SyntaxError: Unexpected identifier
     at createScript (vm.js:56:10)
