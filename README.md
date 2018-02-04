@@ -1,4 +1,4 @@
-# Running Tests
+learn# Running Tests
 
 You understand how to read tests, now it's time to run the tests. We've made it fairly easy. In the same terminal that you used to write `nodejs tests.js` or `nodejs index.js` now, you just need to write `learn`. That's it! No matter what the lab, our Learn command will figure out where you are and run the appropriate tests and give you results.
 
@@ -137,7 +137,7 @@ While you are solving the other tests you may come across a few errors. Let's go
 Error: Expected undefined to equal 'Susan'
 ```
 
-That one says that it expected `undefined` to equal Susan. That makes no sense! You didn't set the `name` variable to `undefined`. Why does it think that `name` is equal to `undefined`? What that actually means is that the test couldn't find the variable `name`. This can happen if you by accident rename the variable. Taking a look at `index.js` I made this mistake: `var nae = "Susan"`. Whoops! If I change that back to `name` everything works. :)
+That one says that it expected `undefined` to equal Susan. That makes no sense! You didn't set the `name` variable to `undefined`. Why does it think that `name` is equal to `undefined`? What that actually means is that the test couldn't find the variable `name`. This can happen if you by accident rename the variable. Taking a look at `index.js` I made this mistake: `var name = "Susan"`. Whoops! If I change that back to `name` everything works. :)
 
 #### Unexpected identifier
 
@@ -179,7 +179,7 @@ SyntaxError: Unexpected identifier
     at bootstrap_node.js:508:3
 ```
 
-Woah! So many words that make no sense. Don't worry though. The most important line is the `SyntaxError: Unexpected identifier` line. What that means is you have some sort of typo or syntax mistake, It could be a HUGE variety of things but usually, JS will try and give you a hint. This time it's pointing to the `vr name = "Susan"` line of code. Take a look and read _very carefully_. I misspelled `var`. Whoops! If you fix that everything will work. 
+Woah! So many words that make no sense. Don't worry though. The most important line is the `SyntaxError: Unexpected identifier` line. What that means is you have some sort of typo or syntax mistake, It could be a HUGE variety of things but usually, JS will try and give you a hint. This time it's pointing to the `var name = "Susan"` line of code. Take a look and read _very carefully_. I misspelled `var`. Whoops! If you fix that everything will work. 
 
 One note on this type of error is that it is sort of a catch-all. Tons and tons of problems end in that sort of error message. Whenever you see it, be sure to read over your code with a fine toothed comb...and you'll find the problem!
 
