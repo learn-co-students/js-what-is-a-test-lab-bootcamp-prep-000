@@ -1,4 +1,4 @@
-# Running Tests
+et a# Running Tests
 
 You understand how to read tests, now it's time to run the tests. We've made it fairly easy. In the same terminal that you used to write `nodejs tests.js` or `nodejs index.js` now, you just need to write `learn`. That's it! No matter what the lab, our Learn command will figure out where you are and run the appropriate tests and give you results.
 
@@ -143,7 +143,8 @@ That one says that it expected `undefined` to equal Susan. That makes no sense! 
 
 ```
 /Users/joe/Documents/Documents/flatiron/js-what-is-a-test-lab/index.js:2
-vr name = "Susan"
+var name = "Susan"
+var height = 39
    ^^^^
 SyntaxError: Unexpected identifier
     at createScript (vm.js:56:10)
@@ -183,4 +184,4 @@ Woah! So many words that make no sense. Don't worry though. The most important l
 
 One note on this type of error is that it is sort of a catch-all. Tons and tons of problems end in that sort of error message. Whenever you see it, be sure to read over your code with a fine toothed comb...and you'll find the problem!
 
-<p class='util--hide'>View <a href='https://learn.co/lessons/js-what-is-a-test-lab'>What Is A Test Lab</a> on Learn.co and start learning to code for free.</p>
+<p class='nutil--hide'>View <a href='https://learn.co/lessons/js-what-is-a-test-lab'>What Is A Test Lab</a> on Learn.co and start learning to code for free.</p>
