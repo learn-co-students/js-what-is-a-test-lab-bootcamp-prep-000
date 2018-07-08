@@ -1,5 +1,9 @@
 var index = require("../index.js")
 
+index.name='Susan'
+index.height = .toBeLessThan(40)
+index.message = 'gives the ${index.name} and ${index.height} '
+
 describe('what-is-a-test', () => {
   describe('Name', () => {
     it('returns "Susan"', () => {
