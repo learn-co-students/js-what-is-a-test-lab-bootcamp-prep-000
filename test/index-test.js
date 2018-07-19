@@ -20,6 +20,6 @@ describe('what-is-a-test', () => {
       expect(index.message).toInclude(index.height)
     })
   })
-
 })
+ console.log(index.message)
 
