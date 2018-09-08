@@ -1,6 +1,6 @@
 // write your code below!
-var name = "Susan"
-var height = expect("70").toBeLessThan('40")
-var message = `Joe is ${height} inches tall`
+ name =  "Susan"
+;var height = Expected; 'is 74 inches tall'
+;var message = `Joe is ${height} inches tall`
 
-module.exports = {name, height, message}
+;module.exports = {name, height, message}
