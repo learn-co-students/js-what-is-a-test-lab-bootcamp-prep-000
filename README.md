@@ -44,6 +44,7 @@ If we run `learn` in our terminal right now, you'll get a bunch of failed tests.
      Error: Expected ' is 74 inches tall' to include 'Joe'
       at assert (node_modules/expect/lib/assert.js:29:9)
       at Expectation.toInclude (node_modules/expect/lib/Expectation.js:215:28)
+
       at Context.it (test/index-test.js:19:29)
 
 
