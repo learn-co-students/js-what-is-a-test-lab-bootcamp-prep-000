@@ -3,7 +3,7 @@ var index = require("../index.js")
 describe('what-is-a-test', () => {
   describe('Name', () => {
     it('returns "Susan"', () => {
-      expect(index.name).toEqual('Susan')
+      expect(index.name).toEqual('Joe')
     })
   })
 
@@ -15,7 +15,7 @@ describe('what-is-a-test', () => {
   })
 
   describe('Message', () => {
-    it('gives the name and height', () => {
+    it('gives the name and the height', () => {
       expect(index.message).toInclude(index.name)
       expect(index.message).toInclude(index.height)
     })
