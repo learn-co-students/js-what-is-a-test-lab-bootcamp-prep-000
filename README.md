@@ -91,7 +91,7 @@ This is all three of the fails. If we break it down even further we can see just
 ```
 1) what-is-a-test Name returns "Susan":
 
-Error: Expected 'Joe' to equal 'Susan'
+Error: Expected  equal 'Susan'
 + expected - actual
 
 -Joe
