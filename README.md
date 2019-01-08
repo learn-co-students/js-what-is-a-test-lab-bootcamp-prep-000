@@ -11,6 +11,7 @@ If we run `learn` in our terminal right now, you'll get a bunch of failed tests.
 **Output from running `learn` in Terminal** 
 
 ```
+f
 > js-functions-lab@0.1.0 test /Users/joe/Documents/Documents/flatiron/js-what-is-a-test-lab
 > mocha -R mocha-multi --reporter-options nyan=-,json=.results.json
 
