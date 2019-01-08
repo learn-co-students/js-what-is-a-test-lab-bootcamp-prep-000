@@ -67,7 +67,7 @@ That should be fairly obvious. You passed 0 tests and failed 3 tests. Not a grea
   + expected - actual
 
   -Joe
-  +Susan
+  =Susan
 
   at assert (node_modules/expect/lib/assert.js:29:9)
   at Expectation.toEqual (node_modules/expect/lib/Expectation.js:81:30)
