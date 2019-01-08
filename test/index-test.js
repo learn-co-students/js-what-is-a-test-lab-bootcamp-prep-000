@@ -8,7 +8,7 @@ describe('what-is-a-test', () => {
   })
 
 
-  describe('Height', () => {
+  /*describe('Height', () => {
     it('is less than 40', () => {
       expect(index.height).toBeLessThan(40)
     })
@@ -21,5 +21,8 @@ describe('what-is-a-test', () => {
     })
   })
 
-})
+})/*
+<<<<<<< HEAD
+=======
 
+>>>>>>> 59b11e1aac61b400c7384a374846b1b04537935e
