@@ -6,12 +6,13 @@ Speaking of results... let's talk about how to read the results that tests give 
 
 ## Reading Results of Tests
 
-If we run `learn` in our terminal right now, you'll get a bunch of failed tests. It will look something like this: 
+If we run `learn` in our terminal right now, you'll get a bunch of failed tests. It will look something like this:
 
-**Output from running `learn` in Terminal** 
+**Output from running `learn` in Terminal**
 
 ```
-> js-functions-lab@0.1.0 test /Users/joe/Documents/Documents/flatiron/js-what-is-a-test-lab
+> js-functions-lab@0.1.0 test
+ /Users/joe/Documents/Documents/flatiron/js-what-is-a-test-lab
 > mocha -R mocha-multi --reporter-options nyan=-,json=.results.json
 
  0   -_-__,------,
@@ -31,25 +32,27 @@ If we run `learn` in our terminal right now, you'll get a bunch of failed tests.
       +Susan
 
       at assert (node_modules/expect/lib/assert.js:29:9)
-      at Expectation.toEqual (node_modules/expect/lib/Expectation.js:81:30)
+      at Expectation.toEqual
+  (node_modules/expect/lib/Expectation.js:81:30)
       at Context.it (test/index-test.js:6:26)
 
   2) what-is-a-test Height is less than 40:
      Error: Expected 74 to be less than 40
       at assert (node_modules/expect/lib/assert.js:29:9)
-      at Expectation.toBeLessThan (node_modules/expect/lib/Expectation.js:156:28)
+      at Expectation.toBeLessThan
+  (node_modules/expect/lib/Expectation.js:156:28)
       at Context.it (test/index-test.js:13:28)
 
   3) what-is-a-test Message gives the name and height:
      Error: Expected ' is 74 inches tall' to include 'Joe'
       at assert (node_modules/expect/lib/assert.js:29:9)
-      at Expectation.toInclude (node_modules/expect/lib/Expectation.js:215:28)
+      at Expectation.toInclude
+  (node_modules/expect/lib/Expectation.js:215:28)
       at Context.it (test/index-test.js:19:29)
 
 
 
 npm ERR! Test failed.  See above for more details.
-```
 
 Let's break this down a bit. If you look at the line under the cat (I love programmers) you'll see a summary of how the tests went:
 
@@ -70,19 +73,22 @@ That should be fairly obvious. You passed 0 tests and failed 3 tests. Not a grea
   +Susan
 
   at assert (node_modules/expect/lib/assert.js:29:9)
-  at Expectation.toEqual (node_modules/expect/lib/Expectation.js:81:30)
+  at Expectation.toEqual
+(node_modules/expect/lib/Expectation.js:81:30)
   at Context.it (test/index-test.js:6:26)
 
 2) what-is-a-test Height is less than 40:
  Error: Expected 74 to be less than 40
   at assert (node_modules/expect/lib/assert.js:29:9)
-  at Expectation.toBeLessThan (node_modules/expect/lib/Expectation.js:156:28)
+  at Expectation.toBeLessThan
+(node_modules/expect/lib/Expectation.js:156:28)
   at Context.it (test/index-test.js:13:28)
 
 3) what-is-a-test Message gives the name and height:
  Error: Expected ' is 74 inches tall' to include 'Joe'
   at assert (node_modules/expect/lib/assert.js:29:9)
-  at Expectation.toInclude (node_modules/expect/lib/Expectation.js:215:28)
+  at Expectation.toInclude
+(node_modules/expect/lib/Expectation.js:215:28)
   at Context.it (test/index-test.js:19:29)
 ```
 
@@ -116,7 +122,8 @@ The tests expects `name` to return `"Susan"`. But if you look at the `Error: Exp
   1) what-is-a-test Height is less than 40:
      Error: Expected 74 to be less than 40
       at assert (node_modules/expect/lib/assert.js:29:9)
-      at Expectation.toBeLessThan (node_modules/expect/lib/Expectation.js:156:28)
+      at Expectation.toBeLessThan
+    (node_modules/expect/lib/Expectation.js:156:28)
       at Context.it (test/index-test.js:13:28)
 
   2) what-is-a-test Message gives the name and height:
@@ -143,7 +150,7 @@ That one says that it expected `undefined` to equal Susan. That makes no sense! 
 
 ```
 /Users/joe/Documents/Documents/flatiron/js-what-is-a-test-lab/index.js:2
-vr name = "Susan"
+var name = "Susan"
    ^^^^
 SyntaxError: Unexpected identifier
     at createScript (vm.js:56:10)
@@ -179,7 +186,7 @@ SyntaxError: Unexpected identifier
     at bootstrap_node.js:508:3
 ```
 
-Woah! So many words that make no sense. Don't worry though. The most important line is the `SyntaxError: Unexpected identifier` line. What that means is you have some sort of typo or syntax mistake, It could be a HUGE variety of things but usually, JS will try and give you a hint. This time it's pointing to the `vr name = "Susan"` line of code. Take a look and read _very carefully_. I misspelled `var`. Whoops! If you fix that everything will work. 
+Woah! So many words that make no sense. Don't worry though. The most important line is the `SyntaxError: Unexpected identifier` line. What that means is you have some sort of typo or syntax mistake, It could be a HUGE variety of things but usually, JS will try and give you a hint. This time it's pointing to the `vr name = "Susan"` line of code. Take a look and read _very carefully_. I misspelled `var`. Whoops! If you fix that everything will work.
 
 One note on this type of error is that it is sort of a catch-all. Tons and tons of problems end in that sort of error message. Whenever you see it, be sure to read over your code with a fine toothed comb...and you'll find the problem!
 
