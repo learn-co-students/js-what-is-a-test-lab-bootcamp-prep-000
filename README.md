@@ -64,6 +64,7 @@ That should be fairly obvious. You passed 0 tests and failed 3 tests. Not a grea
 1) what-is-a-test Name returns "Susan":
 
   Error: Expected 'Joe' to equal 'Susan'
+
   + expected - actual
 
   -Joe
