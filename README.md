@@ -12,7 +12,7 @@ If we run `learn` in our terminal right now, you'll get a bunch of failed tests.
 
 ```
 > js-functions-lab@0.1.0 test /Users/joe/Documents/Documents/flatiron/js-what-is-a-test-lab
-> mocha -R mocha-multi --reporter-options nyan=-,json=.results.json
+> mocha -R mocha-multi --re orter-options nyan=-,json=.results.json
 
  0   -_-__,------,
  3   -_-__|  /\_/\
@@ -143,7 +143,7 @@ That one says that it expected `undefined` to equal Susan. That makes no sense! 
 
 ```
 /Users/joe/Documents/Documents/flatiron/js-what-is-a-test-lab/index.js:2
-vr name = "Susan"
+var name = "Susan"
    ^^^^
 SyntaxError: Unexpected identifier
     at createScript (vm.js:56:10)
