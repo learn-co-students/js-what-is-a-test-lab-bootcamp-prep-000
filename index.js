@@ -1,5 +1,5 @@
 // write your code below!
-var name = "Joe"
+var nme = "Susan"
 var height = 74
 var message = ` is ${height} inches tall`
 
