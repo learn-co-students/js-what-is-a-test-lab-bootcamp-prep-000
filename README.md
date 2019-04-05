@@ -63,7 +63,7 @@ That should be fairly obvious. You passed 0 tests and failed 3 tests. Not a grea
 ```
 1) what-is-a-test Name returns "Susan":
 
-  Error: Expected 'Joe' to equal 'Susan'
+  Error: Expected 'Susan' to equal 'Susan'
   + expected - actual
 
   -Joe
@@ -143,7 +143,7 @@ That one says that it expected `undefined` to equal Susan. That makes no sense! 
 
 ```
 /Users/joe/Documents/Documents/flatiron/js-what-is-a-test-lab/index.js:2
-vr name = "Susan"
+var name = "Susan"
    ^^^^
 SyntaxError: Unexpected identifier
     at createScript (vm.js:56:10)
