@@ -6,9 +6,9 @@ Speaking of results... let's talk about how to read the results that tests give 
 
 ## Reading Results of Tests
 
-If we run `learn` in our terminal right now, you'll get a bunch of failed tests. It will look something like this: 
+If we run `learn` in our terminal right now, you'll get a bunch of failed tests. It will look something like this:
 
-**Output from running `learn` in Terminal** 
+**Output from running `learn` in Terminal**
 
 ```
 > js-functions-lab@0.1.0 test /Users/joe/Documents/Documents/flatiron/js-what-is-a-test-lab
@@ -179,7 +179,7 @@ SyntaxError: Unexpected identifier
     at bootstrap_node.js:508:3
 ```
 
-Woah! So many words that make no sense. Don't worry though. The most important line is the `SyntaxError: Unexpected identifier` line. What that means is you have some sort of typo or syntax mistake, It could be a HUGE variety of things but usually, JS will try and give you a hint. This time it's pointing to the `vr name = "Susan"` line of code. Take a look and read _very carefully_. I misspelled `var`. Whoops! If you fix that everything will work. 
+Woah! So many words that make no sense. Don't worry though. The most important line is the `SyntaxError: Unexpected identifier` line. What that means is you have some sort of typo or syntax mistake, It could be a HUGE variety of things but usually, JS will try and give you a hint. This time it's pointing to the `vr name = "Susan"` line of code. Take a look and read _very carefully_. I misspelled `var`. Whoops! If you fix that everything will work.
 
 One note on this type of error is that it is sort of a catch-all. Tons and tons of problems end in that sort of error message. Whenever you see it, be sure to read over your code with a fine toothed comb...and you'll find the problem!
 
