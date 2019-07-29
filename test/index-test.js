@@ -1,3 +1,7 @@
+var name = "Susan"
+var height = 74
+var message = ` is ${height} inches tall`
+
 var index = require("../index.js")
 
 describe('what-is-a-test', () => {
@@ -22,4 +26,3 @@ describe('what-is-a-test', () => {
   })
 
 })
-
