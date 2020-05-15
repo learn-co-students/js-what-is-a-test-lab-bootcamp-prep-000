@@ -283,5 +283,3 @@ quotation marks wrapping it.
 ## Conclusion
 
 Once you have all three tests passing, run `learn submit` to register completion. Congratulations, you've solved your first tests! On to many more!
-
-<p class='util--hide'>View <a href='https://learn.co/lessons/js-what-is-a-test-lab'>What Is A Test Lab</a> on Learn.co and start learning to code for free.</p>
