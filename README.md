@@ -1,4 +1,4 @@
-# Running Tests
+## Running Tests
 
 You understand how to read tests, now it's time to run the tests. We've made it
 fairly easy. In the same terminal that you used to write `node tests.js` or
