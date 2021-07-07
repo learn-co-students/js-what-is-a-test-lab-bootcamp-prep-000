@@ -1,4 +1,4 @@
-# Running Tests
+learn submit# Running Tests
 
 You understand how to read tests, now it's time to run the tests. We've made it
 fairly easy. In the same terminal that you used to write `node tests.js` or
@@ -201,7 +201,7 @@ I change that back to `name` everything works. :)
 
 ```bash
 /Users/joe/Documents/Documents/flatiron/js-what-is-a-test-lab/index.js:2
-vr name = "Susan"
+var name = "Susan"
    ^^^^
 SyntaxError: Unexpected identifier
     at createScript (vm.js:56:10)
