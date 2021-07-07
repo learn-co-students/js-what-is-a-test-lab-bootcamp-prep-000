@@ -201,7 +201,7 @@ I change that back to `name` everything works. :)
 
 ```bash
 /Users/joe/Documents/Documents/flatiron/js-what-is-a-test-lab/index.js:2
-vr name = "Susan"
+var name = "Susan"
    ^^^^
 SyntaxError: Unexpected identifier
     at createScript (vm.js:56:10)
